@@ -1,13 +1,17 @@
 import clsx from "clsx"
 import * as React from "react"
+import { useContext, useState } from "react"
 import { getAlertClassName, getAlertIconName } from "../../objects"
 import { has, is } from "../../services/classify"
 import { Icon, IconName } from "../icon"
 import { Text } from "../text"
 import { Title, TitleLevels } from "../title"
-import { AlertProps } from "./AlertProps"
+import { AlertProps, ToasterPosition } from "./AlertProps"
 import { hashClass } from "../../helpers"
 import { useTrilogyContext } from "../../context"
+import ToasterContext from "./context"
+import { Button } from "../button"
+import ToasterProvider from "./provider/ToasterProvider"
 
 /**
  * Alert Component
@@ -22,17 +26,18 @@ import { useTrilogyContext } from "../../context"
  * @param others
  */
 const Alert = ({
-  alert,
-  className,
-  iconClassname,
-  iconName,
-  title,
-  description,
-  onClick,
-  display,
-  testId,
-  ...others
-}: AlertProps): JSX.Element => {
+                 alert,
+                 toaster,
+                 className,
+                 iconClassname,
+                 iconName,
+                 title,
+                 description,
+                 onClick,
+                 display,
+                 testId,
+                 ...others
+               }: AlertProps): JSX.Element => {
   const { styled } = useTrilogyContext()
 
   const classes = hashClass(
@@ -46,35 +51,64 @@ const Alert = ({
     else return IconName.INFOS_CIRCLE
   }, [iconName, alert])
 
-  if (display) {
+  const ToasterViewComp: React.FC = () => {
+    const [offset] = useState(50)
+    const [duration] = useState(3)
+
+    const { show } = useContext(ToasterContext)
+
+    const onClickToaster = () => {
+      show({
+        position: toaster?.position ?? ToasterPosition.TOP,
+        duration: toaster?.duration ?? duration,
+        offset,
+        title,
+        description,
+        iconName: iconName,
+        alert: alert,
+        onClick: () => onClick,
+        closable: toaster?.closable,
+        onHide: () => toaster?.onHide,
+        display: true,
+      })
+    }
     return (
-      <div
-        data-testid={testId}
-        onClick={(e) => {
-          // eslint-disable-next-line no-unused-expressions
-          onClick?.(e)
-          e.stopPropagation()
-        }}
-        className={classes}
-        {...others}
-      >
-        <Icon className={iconClassname} name={iconAlert} />
-        <div className={hashClass(styled, clsx("body"))}>
-          {title && typeof title.valueOf() === "string" ? (
-            <Title level={TitleLevels.THREE}>{title}</Title>
-          ) : (
-            title
-          )}
-          {description && typeof description.valueOf() === "string" ? (
-            <Text>{description}</Text>
-          ) : (
-            description
-          )}
-        </div>
-      </div>
+      <Button variant={'PRIMARY'} onClick={onClickToaster}>
+        Open toast
+      </Button>
     )
   }
-  return <div />
+
+  const base = (<div
+    data-testid={testId}
+    onClick={(e) => {
+      // eslint-disable-next-line no-unused-expressions
+      onClick?.(e)
+      e.stopPropagation()
+    }}
+    className={classes}
+    {...others}
+  >
+    <Icon className={iconClassname} name={iconAlert}/>
+    <div className={hashClass(styled, clsx("body"))}>
+      {title && typeof title.valueOf() === "string" ? (
+        <Title level={TitleLevels.THREE}>{title}</Title>
+      ) : (
+        title
+      )}
+      {description && typeof description.valueOf() === "string" ? (
+        <Text>{description}</Text>
+      ) : (
+        description
+      )}
+    </div>
+  </div>)
+
+  if (display) {
+    if (toaster) return <ToasterProvider><ToasterViewComp/></ToasterProvider>
+    return base
+  }
+  return <div/>
 }
 
 export default Alert

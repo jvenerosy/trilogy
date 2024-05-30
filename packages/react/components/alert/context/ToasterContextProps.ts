@@ -1,6 +1,6 @@
 import { Accessibility, AlertProps } from '../../../objects'
 import { IconName, IconNameValues } from '../../icon'
-import { ToasterPosition } from '../ToasterProps'
+import { ToasterPosition } from '../AlertProps'
 
 /**
  * @param title {string} Notification title content
@@ -12,12 +12,13 @@ import { ToasterPosition } from '../ToasterProps'
  * @param onHide {Function} onClick Event on hide
  */
 export interface ToastProps extends AlertProps, Accessibility {
-  title: string
-  description?: string
+  title?: string | React.ReactNode
+  description?: string | React.ReactNode
   iconName?: IconName | IconNameValues
   onClick?: () => void
   closable?: () => void
   onHide?: () => void
+  display?: boolean
 }
 
 interface ToastConfig {
