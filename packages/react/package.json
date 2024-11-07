@@ -35,5 +35,6 @@
   "keywords": [
     "react",
     "design system"
-  ]
+  ],
+  "private": true
 }

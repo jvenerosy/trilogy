@@ -155,8 +155,7 @@
     "packages/react",
     "packages/styles",
     "packages/assets",
-    "packages/vanilla",
-    "examples/react-template"
+    "packages/vanilla"
   ],
   "engineStrict": true,
   "engines": {
