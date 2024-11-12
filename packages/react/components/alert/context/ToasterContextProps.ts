@@ -1,6 +1,6 @@
-import { Accessibility, StatusProps } from '@/objects'
-import { IconName, IconNameValues } from '@/components/icon'
 import { ToasterAlertPosition } from '@/components/alert/AlertProps'
+import { IconName, IconNameValues } from '@/components/icon'
+import { Accessibility, Dev, StatusProps } from '@/objects'
 
 /**
  * @param title {string} Notification title content
@@ -11,7 +11,7 @@ import { ToasterAlertPosition } from '@/components/alert/AlertProps'
  * @param closable {Function} onClick Event on cross icon
  * @param onHide {Function} onClick Event on hide
  */
-export interface ToastProps extends StatusProps, Accessibility {
+export interface ToastProps extends StatusProps, Accessibility, Dev {
   title: string
   description?: string
   iconName?: IconName | IconNameValues

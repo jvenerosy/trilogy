@@ -136,7 +136,7 @@ export default function CardScreen(): JSX.Element {
       <Spacer size={SpacerSize.THREE} />
       <Card horizontal>
         <CardImage
-          size={'3'}
+          size={3}
           src='https://i.etsystatic.com/10951167/r/il/df66c4/1860902191/il_570xN.1860902191_kuoj.jpg'
         />
         <CardContent backgroundColor={TrilogyColor.BACKGROUND}>

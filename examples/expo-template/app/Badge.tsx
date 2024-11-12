@@ -33,10 +33,10 @@ export default function BadgeScreen(): JSX.Element {
 
       <Title level={TitleLevels.THREE}>Reversed props </Title>
       <Columns scrollable>
-        <ColumnsItem size={6} key={1}>
+        <ColumnsItem size={6}>
           <Badge reversed={false} content={2} textContent='Text' />
         </ColumnsItem>
-        <ColumnsItem size={6} key={2}>
+        <ColumnsItem size={6}>
           <Badge reversed={true} content={2} textContent='Text' />
         </ColumnsItem>
       </Columns>
@@ -44,13 +44,13 @@ export default function BadgeScreen(): JSX.Element {
       <Title level={TitleLevels.THREE}>Inverted props </Title>
       <Box backgroundColor={TrilogyColor.MAIN} inverted>
         <Columns scrollable>
-          <ColumnsItem size={4} key={1}>
+          <ColumnsItem size={4}>
             <Badge reversed={false} content={2} textContent='Text' inverted />
           </ColumnsItem>
-          <ColumnsItem size={4} key={2}>
+          <ColumnsItem size={4}>
             <Badge reversed={true} content={2} textContent='Text' inverted />
           </ColumnsItem>
-          <ColumnsItem size={4} key={2}>
+          <ColumnsItem size={4}>
             <Badge reversed={true} content={2} inverted />
           </ColumnsItem>
         </Columns>
