@@ -42,7 +42,7 @@ const RootLayout = () => {
   if (!loaded) return null
 
   return (
-    <TrilogyProviderStyled>
+    <TrilogyProviderStyled theme='mangled'>
       <TrilogyThemeProvider theme={theme}>
         <StackLayout />
       </TrilogyThemeProvider>

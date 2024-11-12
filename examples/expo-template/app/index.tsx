@@ -60,7 +60,7 @@ export default function IndexScreen(): JSX.Element {
                     }}
                   >
                     <BoxContent>
-                      <Columns verticalCentered>
+                      <Columns>
                         <ColumnsItem size={11}>
                           <Title level={TitleLevels.THREE}>{name}</Title>
                         </ColumnsItem>

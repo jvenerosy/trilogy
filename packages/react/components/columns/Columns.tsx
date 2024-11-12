@@ -9,7 +9,6 @@ import {getAlignClassName} from "@/objects";
 /**
  * Columns Component
  * @param centered {boolean} Center columns
- * @param verticalCentered {boolean} Vertical centered columns
  * @param scrollable {boolean} Make colomns scrollable to vertical
  * @param children {React.ReactNode}
  * @param marginless {boolean} delete margin
