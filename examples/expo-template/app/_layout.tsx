@@ -5,7 +5,7 @@ import { Stack } from 'expo-router'
 import * as SplashScreen from 'expo-splash-screen'
 import { useEffect } from 'react'
 
-import '@trilogy-ds/styles/dist/default/trilogy.css'
+import { TrilogyProviderStyled } from '@/context/providerStyled'
 import Screens from '../components.json'
 
 SplashScreen.preventAutoHideAsync()
@@ -42,9 +42,11 @@ const RootLayout = () => {
   if (!loaded) return null
 
   return (
-    <TrilogyThemeProvider theme={theme}>
-      <StackLayout />
-    </TrilogyThemeProvider>
+    <TrilogyProviderStyled>
+      <TrilogyThemeProvider theme={theme}>
+        <StackLayout />
+      </TrilogyThemeProvider>
+    </TrilogyProviderStyled>
   )
 }
 

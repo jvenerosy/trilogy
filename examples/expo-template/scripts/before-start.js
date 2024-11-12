@@ -9,7 +9,7 @@ try {
 
   const components = files
     .filter((file) => fs.lstatSync(path.join(appDir, file)).isFile())
-    .filter((file) => !file.includes('_layout') && !file.includes('index'))
+    .filter((file) => !file.includes('_layout') && !file.includes('index') && !file.includes('html'))
     .map((file) => path.parse(file).name)
 
   fs.writeFileSync(outputFile, JSON.stringify(components, null, 2))
