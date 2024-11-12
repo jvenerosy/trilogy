@@ -6,7 +6,7 @@ export default function FabScreen(): JSX.Element {
   return (
     <Section>
       <View style={{ height: '80rem' }}>
-        <Title level={'TWO'}>FAB button</Title>
+        <Title level={2}>FAB button</Title>
         <Fab
           extended={active}
           onClick={() => setActive(!active)}

@@ -10,8 +10,7 @@ import {
   Title,
   TitleLevels,
 } from '@trilogy-ds/react/components'
-// import {Item} from '@trilogy-ds/react/components/autocomplete/AutoCompleteProps'
-import { AutoComplete, Item } from '@trilogy-ds/react/components/autocomplete'
+import { AutoComplete } from '@trilogy-ds/react/components/autocomplete'
 import { InputClickEvent } from '@trilogy-ds/react/components/input/InputProps'
 import React, { useState } from 'react'
 
@@ -31,7 +30,7 @@ export default function AutocompleteScreen(): JSX.Element {
   const [status, setStatus] = useState<boolean>(false)
   const [data] = [['name', 'age', 'car', 'test', 'trilogy']]
 
-  const onChange = (e) => {
+  const onChange = (e: any) => {
     console.log('OnChange Autocomplete : ', e)
     setValue(e.inputValue)
   }
@@ -69,7 +68,7 @@ export default function AutocompleteScreen(): JSX.Element {
       <Divider />
       <Section>
         <Title level={TitleLevels.THREE}>Autocomplete custom data</Title>
-        <AutoComplete<Item<{ info: number }>>
+        <AutoComplete
           customIcon={IconName.INFOS_CIRCLE}
           displayMenu={false}
           data={[
@@ -85,13 +84,13 @@ export default function AutocompleteScreen(): JSX.Element {
           onFocus={(e) => console.log('FOCUS : ', e)}
           onBlur={(e) => console.log('BLUR : ', e)}
         >
-          {(item) => <Text>La super info : {item.data.info}</Text>}
+          {(item: any) => <Text>La super info : {item.data.info}</Text>}
         </AutoComplete>
       </Section>
       <Divider />
       <Section>
         <Title level={TitleLevels.THREE}>Autocomplete with getSuggestions function</Title>
-        <AutoComplete<Item<{ info: number }>>
+        <AutoComplete
           customIcon={IconName.INFOS_CIRCLE}
           displayMenu={false}
           data={[]}
@@ -102,7 +101,7 @@ export default function AutocompleteScreen(): JSX.Element {
           onFocus={(e) => console.log('FOCUS : ', e)}
           onBlur={(e) => console.log('BLUR : ', e)}
         >
-          {(item) => <Text>La super info : {item.data.info}</Text>}
+          {(item: any) => <Text>La super info : {item.data.info}</Text>}
         </AutoComplete>
       </Section>
       <Divider />
@@ -133,7 +132,7 @@ export default function AutocompleteScreen(): JSX.Element {
           disabled={status}
           placeholder='Autocomplete'
           onItemSelected={(e) => {
-            setValue(e.value || '')
+            setValue((e.value as string) || '')
             console.log('onItemSelected : ', e.value)
           }}
           onChange={onChange}

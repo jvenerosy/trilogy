@@ -45,7 +45,7 @@ export default function HeroScreen(): JSX.Element {
       <Hero backgroundSrc={'https://picsum.photos/id/1/1500/600'} inverted>
         <Container>
           <Text>Welcome Message</Text>
-          <Title level='ONE'>Hero with image background</Title>
+          <Title level={1}>Hero with image background</Title>
           {/* <button className='button'>Click me !</button> */}
           <Button markup={ButtonMarkup.BUTTON} variant={'PRIMARY'} onClick={() => alert('Click on hero btn')}>
             Click me !
@@ -56,7 +56,7 @@ export default function HeroScreen(): JSX.Element {
       <Hero backgroundColor={TrilogyColor.MAIN} inverted>
         <Container>
           <Text>Welcome Message</Text>
-          <Title level='TWO'>Hero with Background Color</Title>
+          <Title level={2}>Hero with Background Color</Title>
           {/* <button className='button'>Click me !</button> */}
           <Button
             markup={ButtonMarkup.BUTTON}

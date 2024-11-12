@@ -97,7 +97,7 @@ export default function PriceScreen(): JSX.Element {
 
       <Price level={2} amount={18.99} showCents />
 
-      <Price level={2} amount={18.99} showCents striked={true} />
+      <Price level={2} amount={18.99} showCents />
 
       <Divider />
       <Title level={TitleLevels.THREE}>Inlined</Title>
@@ -109,7 +109,7 @@ export default function PriceScreen(): JSX.Element {
         period='months'
         showCents
         align={Alignable.ALIGNED_START}
-        suptitle={'From '}
+        overline={'From '}
         inline
       />
 
@@ -145,7 +145,7 @@ export default function PriceScreen(): JSX.Element {
       <Section backgroundColor={TrilogyColor.MAIN}>
         <Price inverted level={PriceLevel.ONE} amount={18.99} mention='(1)' period='months' showCents />
 
-        <Price striked inverted level={PriceLevel.ONE} amount={18.99} mention='(1)' period='months' showCents />
+        <Price inverted level={PriceLevel.ONE} amount={18.99} mention='(1)' period='months' showCents />
       </Section>
 
       <Divider />

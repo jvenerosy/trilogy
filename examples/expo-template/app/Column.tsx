@@ -1,3 +1,4 @@
+import { ColumnsSize } from '@/components/columns/ColumnsTypes'
 import { TrilogyColor } from '@trilogy-ds/react'
 import {
   Box,
@@ -27,7 +28,7 @@ export default function ColumnScreen(): JSX.Element {
       <Title level={TitleLevels.THREE}>Gap, size</Title>
       <Text> Columns with gap size 5 </Text>
       <Columns gap={GapSize.FIVE}>
-        <ColumnsItem size={4} verticalAlign={'ALIGNED_CENTER'}>
+        <ColumnsItem size={4}>
           <Box backgroundColor={TrilogyColor.MAIN} inverted>
             <Text>Size=4</Text>
           </Box>
@@ -93,8 +94,8 @@ export default function ColumnScreen(): JSX.Element {
       <Columns multiline>
         {Object.values([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).map((colSize, index) => {
           return (
-            <ColumnsItem size={colSize}>
-              <Box backgroundColor={index % 2 && TrilogyColor.MAIN} inverted={index % 2}>
+            <ColumnsItem size={colSize as ColumnsSize}>
+              <Box backgroundColor={index % 2 ? TrilogyColor.MAIN : undefined} inverted={!!(index % 2)}>
                 <Text>Size : {colSize}</Text>
               </Box>
             </ColumnsItem>
@@ -108,8 +109,8 @@ export default function ColumnScreen(): JSX.Element {
       <Columns scrollable mobile>
         {Object.values([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).map((colSize, index) => {
           return (
-            <ColumnsItem size={colSize}>
-              <Box backgroundColor={index % 2 && TrilogyColor.MAIN} inverted={index % 2}>
+            <ColumnsItem size={colSize as ColumnsSize}>
+              <Box backgroundColor={index % 2 ? TrilogyColor.MAIN : undefined} inverted={!!(index % 2)}>
                 <Text>Size : {colSize}</Text>
               </Box>
             </ColumnsItem>
@@ -122,8 +123,8 @@ export default function ColumnScreen(): JSX.Element {
       <Columns scrollable mobile fullBleed>
         {Object.values([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).map((colSize, index) => {
           return (
-            <ColumnsItem size={colSize}>
-              <Box backgroundColor={index % 2 && TrilogyColor.MAIN} inverted={index % 2}>
+            <ColumnsItem size={colSize as ColumnsSize}>
+              <Box backgroundColor={index % 2 ? TrilogyColor.MAIN : undefined} inverted={!!(index % 2)}>
                 <Text>Size : {colSize}</Text>
               </Box>
             </ColumnsItem>
@@ -371,7 +372,7 @@ export default function ColumnScreen(): JSX.Element {
 
       <Divider />
       <Title level={TitleLevels.THREE}>Another example : 6 cards scrollable</Title>
-      <Columns scrollable marginSize={3}>
+      <Columns scrollable gap={3}>
         <ColumnsItem desktopSize={3} tabletSize={6} size={12}>
           <Card>
             <CardImage src='https://i.etsystatic.com/10951167/r/il/df66c4/1860902191/il_570xN.1860902191_kuoj.jpg' />

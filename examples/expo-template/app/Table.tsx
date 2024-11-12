@@ -39,7 +39,6 @@ export default function TableScreen(): JSX.Element {
             </TableTr>
           </TableHead>
           <TableBody>
-            <TableTr></TableTr>
             <TableTr>
               <TableTd>
                 <Text>gateway.introspection.filter.enabled</Text>

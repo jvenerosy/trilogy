@@ -1,8 +1,17 @@
-import { Accessibility, Dev, Centerable, Position, VariantState, StatusState } from '@/objects'
+import {
+  Accessibility,
+  Centerable,
+  Dev,
+  Position,
+  StatusState,
+  StatusStateValues,
+  VariantState,
+  VariantStateValues,
+} from '@/objects'
 
 export interface BoxHeaderProps extends Position, Centerable, Accessibility, Dev {
   children?: React.ReactNode
   help?: string
   className?: string
-  variant?: VariantState | StatusState
+  variant?: VariantState | StatusState | VariantStateValues | StatusStateValues
 }

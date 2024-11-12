@@ -13,9 +13,9 @@ export default function SelectScreen(): JSX.Element {
       <Section>
         <Title>Custom select</Title>
         <Divider />
-        <Spacer size={20} />
+        <Spacer size={24} />
         <Title level={TitleLevels.TWO}>Unique option</Title>
-        <Spacer size={20} />
+        <Spacer size={24} />
         <Title level={TitleLevels.FOUR}>Not nullable</Title>
         <Select
           disabled
@@ -36,7 +36,7 @@ export default function SelectScreen(): JSX.Element {
         <Button onClick={() => setOption('Venus')} variant='PRIMARY'>
           Set value 3
         </Button>
-        <Spacer size={20} />
+        <Spacer size={24} />
 
         <Title level={TitleLevels.FOUR}>nullable</Title>
         <Select
@@ -60,10 +60,10 @@ export default function SelectScreen(): JSX.Element {
         <Button onClick={() => setOptionNullable('opt_one')} variant='PRIMARY'>
           Set One
         </Button>
-        <Spacer size={20} />
+        <Spacer size={24} />
 
         <Title level={TitleLevels.TWO}>Multiple options</Title>
-        <Spacer size={20} />
+        <Spacer size={24} />
         <Title level={TitleLevels.FOUR}>Not nullable</Title>
         <Select
           multiple
@@ -84,7 +84,7 @@ export default function SelectScreen(): JSX.Element {
           Set Venus
         </Button>
 
-        <Spacer size={20} />
+        <Spacer size={24} />
         <Title level={TitleLevels.FOUR}>nullable</Title>
         <Select
           nullable
@@ -114,7 +114,7 @@ export default function SelectScreen(): JSX.Element {
       <Section>
         <Title>Native select {'(web)'}</Title>
         <Divider />
-        <Spacer size={20} />
+        <Spacer size={24} />
         <Title level={TitleLevels.FOUR}>Not icon</Title>
         <Select
           native

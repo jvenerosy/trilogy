@@ -20,7 +20,7 @@ export default function CheckboxScreen(): JSX.Element {
           Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
         </Text>
         <Columns>
-          <ColumnsItem size={6} centered>
+          <ColumnsItem size={6} verticalCentered>
             <Checkbox
               tile
               iconTile={IconName.CHECK_CIRCLE}
@@ -46,7 +46,7 @@ export default function CheckboxScreen(): JSX.Element {
         </Columns>
         <Spacer size={SpacerSize.FOUR} />
         <Columns>
-          <ColumnsItem size={6} centered>
+          <ColumnsItem size={6} verticalCentered>
             <Checkbox
               tile
               iconTile={IconName.CHECK_CIRCLE}

@@ -40,7 +40,7 @@ export default function TextScreen(): JSX.Element {
         reiciendis, sint.
       </Text>
       <Columns>
-        <ColumnsItem size={12} centered>
+        <ColumnsItem size={12} verticalCentered>
           <Text>Mon texte</Text>
           <ButtonList>
             <Button variant={ButtonVariant.PRIMARY}>Centered button</Button>

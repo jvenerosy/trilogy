@@ -24,7 +24,7 @@ export default function ListScreen(): JSX.Element {
         <ListItem divider title='Ceci est le titre' description='Lorem ipsum dolor sit amet consectetur '></ListItem>
         <ListItem divider title='Ceci est le titre' description='Lorem ipsum dolor sit amet consectetur '></ListItem>
         <ListItem divider>
-          <Title level='SIX'>Ceci est le titre</Title>
+          <Title level={6}>Ceci est le titre</Title>
           <ListItemDescription>Lorem ipsum dolor sit amet consectetur adipisicing</ListItemDescription>
         </ListItem>
       </List>
@@ -49,7 +49,7 @@ export default function ListScreen(): JSX.Element {
           description='Lorem ipsum dolor sit amet consectetur '
         ></ListItem>
         <ListItem action={<Checkbox />}>
-          <Title level='SIX'>Ceci est le titre</Title>
+          <Title level={6}>Ceci est le titre</Title>
           <ListItemDescription>Lorem ipsum dolor sit amet consectetur adipisicing</ListItemDescription>
         </ListItem>
       </List>
@@ -74,7 +74,7 @@ export default function ListScreen(): JSX.Element {
           description='Lorem ipsum dolor sit amet consectetur '
         />
         <ListItem customIcon={<Avatar />}>
-          <Title level='SIX'>Ceci est le titre</Title>
+          <Title level={6}>Ceci est le titre</Title>
           <ListItemDescription>Lorem ipsum dolor sit amet consectetur adipisicing</ListItemDescription>
         </ListItem>
       </List>
@@ -94,7 +94,7 @@ export default function ListScreen(): JSX.Element {
           customIcon={<Icon name='tri-trash' size='small' />}
           action={<Switch name='switch' onChange={(e) => console.log(e.switchState)} />}
         >
-          <Title level='SIX'>Ceci est le titre</Title>
+          <Title level={6}>Ceci est le titre</Title>
           <ListItemDescription>Lorem ipsum dolor sit amet consectetur adipisicing</ListItemDescription>
         </ListItem>
       </List>

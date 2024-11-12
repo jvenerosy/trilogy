@@ -32,7 +32,7 @@ export default function StepperScreen(): JSX.Element {
       <Box>
         <BoxContent>
           <Title level={TitleLevels.ONE}>Mon panier</Title>
-          <Spacer size={30}></Spacer>
+          <Spacer size={40}></Spacer>
           <Stepper>
             <StepperStep
               done={1 < activeStep}
@@ -61,7 +61,7 @@ export default function StepperScreen(): JSX.Element {
           </Stepper>
         </BoxContent>
       </Box>
-      <Spacer size={30}></Spacer>
+      <Spacer size={40}></Spacer>
       <Button onClick={handleClickNext} variant={'PRIMARY'}>
         Next
       </Button>

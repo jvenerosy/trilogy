@@ -8,7 +8,6 @@ export default function TextareaScreen(): JSX.Element {
         label='Textarea label not dynamic with sample'
         sample='Textarea sample'
         help='Search helper textarea'
-        onKeyUp={(e) => console.log(e)}
         required
         iconName={IconName.CHECK}
         statusIconName='tri-exclamation-circle'
@@ -20,7 +19,6 @@ export default function TextareaScreen(): JSX.Element {
       <Textarea
         label='Textarea label not dynamic without sample'
         help='Search helper textarea'
-        onKeyUp={(e) => console.log(e)}
         required
         iconName={IconName.CHECK}
         dynamicPlaceholder={false}

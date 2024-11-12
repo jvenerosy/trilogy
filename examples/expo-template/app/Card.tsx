@@ -162,7 +162,7 @@ export default function CardScreen(): JSX.Element {
           <Accordion className='is-marginless'>
             <AccordionItem active>
               <AccordionHeader>
-                <Text level={'ONE'}>Card floating (inside component)</Text>
+                <Text level={1}>Card floating (inside component)</Text>
               </AccordionHeader>
               <AccordionBody>
                 <Card floating>

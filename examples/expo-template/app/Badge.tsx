@@ -1,7 +1,6 @@
 import { Box, TrilogyColor } from '@trilogy-ds/react'
 import {
   Badge,
-  BadgeColor,
   Columns,
   ColumnsItem,
   Divider,
@@ -30,18 +29,6 @@ export default function BadgeScreen(): JSX.Element {
 
       <Title level={TitleLevels.THREE}>Icon badgeContent </Title>
       <Icon name={IconName.INFOS_CIRCLE} badgeContent='42' />
-      <Divider />
-
-      <Title level={TitleLevels.THREE}>Color + TextContent props </Title>
-      <Columns scrollable>
-        {Object.values(BadgeColor).map((color, index) => {
-          return (
-            <ColumnsItem size={6} key={index}>
-              <Badge color={color} content={2} textContent='Text' />
-            </ColumnsItem>
-          )
-        })}
-      </Columns>
       <Divider />
 
       <Title level={TitleLevels.THREE}>Reversed props </Title>

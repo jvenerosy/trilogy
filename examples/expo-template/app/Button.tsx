@@ -14,9 +14,9 @@ import React from 'react'
 const Separator = () => {
   return (
     <>
-      <Spacer size={10} />
+      <Spacer size={12} />
       <Divider />
-      <Spacer size={50} />
+      <Spacer size={48} />
     </>
   )
 }
@@ -26,7 +26,7 @@ export default function ButtonScreen(): JSX.Element {
     <Section>
       {/*  ======== variants ======== */}
       <Title level={TitleLevels.TWO}>Variant </Title>
-      <Spacer size={10} />
+      <Spacer size={12} />
       <ButtonList>
         {Object.values(ButtonVariant).map((variant, index) => {
           return (
@@ -40,7 +40,7 @@ export default function ButtonScreen(): JSX.Element {
 
       {/*  ======== loading & variant ======== */}
       <Title level={TitleLevels.TWO}>loading + variant </Title>
-      <Spacer size={10} />
+      <Spacer size={12} />
       <ButtonList>
         {Object.values(ButtonVariant).map((color, index) => {
           return (
@@ -54,7 +54,7 @@ export default function ButtonScreen(): JSX.Element {
 
       {/*  ======== disabled & variant ======== */}
       <Title level={TitleLevels.TWO}>disabled + variant </Title>
-      <Spacer size={10} />
+      <Spacer size={12} />
       <ButtonList>
         {Object.values(ButtonVariant).map((color, index) => {
           return (
@@ -68,7 +68,7 @@ export default function ButtonScreen(): JSX.Element {
 
       {/*  ======== fullwidth ======== */}
       <Title level={TitleLevels.TWO}>fullwidth </Title>
-      <Spacer size={10} />
+      <Spacer size={12} />
       <Button fullwidth variant={'PRIMARY'}>
         Cliquer
       </Button>
@@ -76,7 +76,7 @@ export default function ButtonScreen(): JSX.Element {
 
       {/*  ======== icons ======== */}
       <Title level={TitleLevels.TWO}>iconName </Title>
-      <Spacer size={10} />
+      <Spacer size={12} />
       <ButtonList>
         <Button iconName={IconName.TIMES} variant={'CONVERSION'}>
           Icon Conversion

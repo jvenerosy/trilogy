@@ -35,7 +35,7 @@ export default function RadioScreen(): JSX.Element {
         </Rows>
 
         <Columns>
-          <ColumnsItem size={6} centered>
+          <ColumnsItem size={6} verticalCentered>
             <Radio
               tile
               iconTile={IconName.CHECK_CIRCLE}
@@ -61,7 +61,7 @@ export default function RadioScreen(): JSX.Element {
         </Columns>
         <Spacer size={SpacerSize.FIVE} />
         <Columns>
-          <ColumnsItem size={6} centered>
+          <ColumnsItem size={6} verticalCentered>
             <Radio
               tile
               iconTile={IconName.CHECK_CIRCLE}

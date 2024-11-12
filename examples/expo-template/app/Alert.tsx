@@ -74,7 +74,7 @@ export default function AlertScreen(): JSX.Element {
               return (
                 <AutoLayout key={index}>
                   <Title level={TitleLevels.TWO}>StatusState : {status}</Title>
-                  <Spacer size={10} />
+                  <Spacer size={12} />
                   <Alert
                     status={status}
                     title={status}

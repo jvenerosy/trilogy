@@ -16,7 +16,7 @@ import * as React from 'react'
 export default function AccordionScreen(): JSX.Element {
   return (
     <Section>
-      <Spacer size={3} />
+      <Spacer size={4} />
       <Title level={TitleLevels.TWO}>Base</Title>
       <Spacer size={SpacerSize.THREE} />
       <Accordion>
@@ -24,7 +24,7 @@ export default function AccordionScreen(): JSX.Element {
           <AccordionHeader>
             <Text>Hello World 1</Text>
           </AccordionHeader>
-          <AccordionBody dataId='totooooo-test-id' testId='totooooo'>
+          <AccordionBody testId='totooooo'>
             <Text>Lorem ipsum dolor sit amet lorem</Text>
           </AccordionBody>
         </AccordionItem>

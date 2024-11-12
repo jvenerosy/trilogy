@@ -5,6 +5,7 @@ import {
   AccordionHeader,
   AccordionItem,
   Alert,
+  AutoComplete,
   AutoLayout,
   Box,
   BoxContent,
@@ -15,7 +16,6 @@ import {
   Icon,
   IconName,
   IconSize,
-  Input,
   Text,
   TextLevels,
   Title,
@@ -80,7 +80,7 @@ export default function AutoLayoutScreen(): JSX.Element {
           <AccordionHeader>
             <Text>Hello World 1</Text>
           </AccordionHeader>
-          <AccordionBody dataId='totooooo-test-id' testId='totooooo'>
+          <AccordionBody testId='totooooo'>
             <Text>Lorem ipsum dolor sit amet lorem</Text>
           </AccordionBody>
         </AccordionItem>
@@ -117,7 +117,7 @@ export default function AutoLayoutScreen(): JSX.Element {
         description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
       />
 
-      <Input.AutoComplete customIcon={IconName.ALERT} displayMenu={true} data={['1', '2']} />
+      <AutoComplete customIcon={IconName.ALERT} displayMenu={true} data={['1', '2']} />
     </AutoLayout>
   )
 }
