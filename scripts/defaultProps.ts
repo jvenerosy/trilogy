@@ -1,5 +1,5 @@
-import * as fs from 'fs'
-import * as glob from 'glob'
+import { writeFileSync } from 'fs'
+import { globSync } from 'glob'
 import * as path from 'path'
 import { InterfaceDeclaration, Project, Type } from 'ts-morph'
 
@@ -68,11 +68,11 @@ function generateDefaultObject(sourceFile: any, interfaceName: string): Record<s
 
 function writeObjectToFile(filePath: string, obj: Record<string, any>): void {
   const content = `export default ${JSON.stringify(obj, null, 2)};`
-  fs.writeFileSync(filePath, content, 'utf8')
+  writeFileSync(filePath, content, 'utf8')
 }
 
 function processFiles() {
-  const files = glob.sync('packages/react/lib/components/**/*Props.d.ts', { ignore: 'node_modules/**' })
+  const files = globSync('packages/react/lib/components/**/*Props.d.ts', { ignore: 'node_modules/**' })
 
   files.forEach((file) => {
     const sourceFile = project.addSourceFileAtPath(file)

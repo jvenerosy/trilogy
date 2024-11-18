@@ -1,10 +1,10 @@
-import { defineConfig } from "vite";
-import path from "path";
-import glob from "glob";
-import {generateIconsScss} from "./config/plugins/vite-plugin-generate-icons-scss";
-import {cssPlugin} from "./config/plugins/vite-plugin-mangler";
+import { defineConfig } from 'vite'
+import path from 'path'
+import { globSync } from 'glob'
+import { generateIconsScss } from './config/plugins/vite-plugin-generate-icons-scss'
+import { cssPlugin } from './config/plugins/vite-plugin-mangler'
 
-const isWatchMode = process.argv.includes('--watch');
+const isWatchMode = process.argv.includes('--watch')
 
 export default defineConfig({
   plugins: [
@@ -13,9 +13,9 @@ export default defineConfig({
       scssOutputPath: path.resolve(__dirname, './assets/icons/_all.scss'),
       prefix: '',
       sizeAuto: false,
-      directory: 'all'
+      directory: 'all',
     }),
-    cssPlugin()
+    cssPlugin(),
   ],
   css: {
     modules: false,
@@ -33,10 +33,10 @@ export default defineConfig({
     watch: isWatchMode ? {} : null,
     emptyOutDir: false,
     rollupOptions: {
-      input: glob.sync(path.resolve(__dirname, "./themes/*", "*.scss")),
+      input: globSync(path.resolve(__dirname, './themes/*', '*.scss')),
       output: {
-        assetFileNames: `default/[name].[ext]`
-      }
+        assetFileNames: `default/[name].[ext]`,
+      },
     },
-  }
+  },
 })
