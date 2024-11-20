@@ -5,8 +5,8 @@
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
-  "module": "lib/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "typings": "lib/index.d.ts",
   "sideEffect": false,
   "description": "Trilogy react framework design system for Bouygues Telecom",
@@ -16,24 +16,29 @@
     "check-types": "tsc --noemit",
     "test:native": "jest --config jest.config.native.ts --updateSnapshot --coverage --silent=false",
     "prebuild": "node -p \"'export const version = ' + JSON.stringify(require('./package.json').version)\" > version.ts",
-    "build": "rimraf lib && npm run prebuild && tsc -p . && tsc-alias && cp -R ../../config/native/react-native.config.js ./lib/"
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "rimraf lib && npm run prebuild && npm run build:esm && npm run build:cjs && tsc-alias && cp -R ../../config/native/react-native.config.js ./lib/"
   },
   "dependencies": {
+    "@ptomasroos/react-native-multi-slider": "^2.2.2",
     "@react-native-picker/picker": "^2.6.1",
+    "@trilogy-ds/assets": "*",
+    "@trilogy-ds/styles": "*",
     "clsx": "^2.1.0",
     "color": "^4.2.3",
     "react-content-loader": "^6.2.1",
+    "react-native-gesture-handler": "^2.16.0",
     "react-native-modal": "^13.0.1",
     "react-native-toast-message": "^2.2.0",
     "rollup-plugin-copy": "^3.5.0",
-    "shortid": "^2.2.16",
-    "@trilogy-ds/assets": "*",
-    "@trilogy-ds/styles": "*",
-    "@ptomasroos/react-native-multi-slider": "^2.2.2",
-    "react-native-gesture-handler": "^2.16.0"
+    "shortid": "^2.2.16"
   },
   "keywords": [
     "react",
     "design system"
-  ]
+  ],
+  "devDependencies": {
+    "typescript-transform-paths": "^3.5.2"
+  }
 }

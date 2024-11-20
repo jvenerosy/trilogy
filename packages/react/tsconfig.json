@@ -28,7 +28,11 @@
     "experimentalDecorators": true,
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+	"plugins": [
+		{ "transform": "typescript-transform-paths" },
+		{ "transform": "typescript-transform-paths", "afterDeclarations": true },
+	],
   },
   "include": [
     "./**/*.json",
@@ -46,6 +50,7 @@
     "**/test/**",
   ],
   "ts-node": {
+	"require": [ "typescript-transform-paths/register" ],
     "compilerOptions": {
       "module": "CommonJS"
     }

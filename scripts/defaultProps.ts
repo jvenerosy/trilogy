@@ -71,8 +71,8 @@ function writeObjectToFile(filePath: string, obj: Record<string, any>): void {
   writeFileSync(filePath, content, 'utf8')
 }
 
-function processFiles() {
-  const files = globSync('packages/react/lib/components/**/*Props.d.ts', { ignore: 'node_modules/**' })
+function processFiles(propsPath: string) {
+  const files = globSync(propsPath, { ignore: 'node_modules/**' })
 
   files.forEach((file) => {
     const sourceFile = project.addSourceFileAtPath(file)
@@ -87,4 +87,5 @@ function processFiles() {
   })
 }
 
-processFiles()
+processFiles('packages/react/lib/cjs/components/**/*Props.d.ts')
+processFiles('packages/react/lib/esm/components/**/*Props.d.ts')
