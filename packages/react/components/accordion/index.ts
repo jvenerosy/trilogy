@@ -1,6 +1,21 @@
 import Accordion from './Accordion'
-import AccordionItem from './item'
-import AccordionHeader from './header'
-import AccordionBody from './body'
+import AccordionItem, {
+  type AccordionItemProps,
+  type OnClickCallback,
+  type OnClickEvent,
+  type TargetElement,
+} from './item'
+import AccordionHeader, { type AccordionHeaderProps } from './header'
+import AccordionBody, { type AccordionBodyProps } from './body'
+
+export type * from './AccordionProps'
 
 export { Accordion, AccordionItem, AccordionHeader, AccordionBody }
+export type {
+  AccordionItemProps,
+  AccordionHeaderProps,
+  AccordionBodyProps,
+  OnClickCallback,
+  OnClickEvent,
+  TargetElement,
+}

@@ -1,4 +1,7 @@
 import Select from './Select'
-import SelectOption from './option'
+import SelectOption, { type SelectOptionProps } from './option'
+
+export type * from './SelectProps'
 
 export { Select, SelectOption }
+export type { SelectOptionProps }

@@ -1,5 +1,5 @@
 import ListItemDescription from './ListItemDescription'
 
-export * from './ListItemDescriptionProps'
+export type * from './ListItemDescriptionProps'
 
 export { ListItemDescription }

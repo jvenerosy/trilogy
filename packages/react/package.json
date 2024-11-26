@@ -1,13 +1,13 @@
 {
   "name": "@trilogy-ds/react",
-  "version": "0.0.1-beta.78",
+  "version": "0.0.1-beta.78.2",
   "author": "Bouygues Telecom",
   "files": [
     "lib"
   ],
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
-  "typings": "lib/index.d.ts",
+  "typings": "lib/esm/index.d.ts",
   "sideEffect": false,
   "description": "Trilogy react framework design system for Bouygues Telecom",
   "license": "UNLICENSED",
@@ -40,5 +40,50 @@
   ],
   "devDependencies": {
     "typescript-transform-paths": "^3.5.2"
+  },
+  "exports": {
+	".": {
+		"import": "./lib/esm/index.js",
+		"require": "./lib/cjs/index.js",
+		"types": "./lib/esm/index.d.ts"
+	},
+	"./components": {
+		"import": "./lib/esm/components/index.js",
+		"require": "./lib/cjs/components/index.js",
+		"types": "./lib/esm/components/index.d.ts"
+	},
+	"./components/*": {
+		"import": "./lib/esm/components/*/index.js",
+		"require": "./lib/cjs/components/*/index.js",
+		"types": "./lib/esm/components/*/index.d.ts"
+	},
+	"./components/enums": {
+		"import": "./lib/esm/components/enums.js",
+		"require": "./lib/cjs/components/enums.js"
+	},
+	"./context": {
+		"import": "./lib/esm/context/index.js",
+		"require": "./lib/cjs/context/index.js"
+	},
+	"./context/*": {
+		"import": "./lib/esm/context/*.js",
+		"require": "./lib/cjs/context/*.js"
+	},
+	"./events": {
+		"import": "./lib/esm/events/index.js",
+		"require": "./lib/cjs/events/index.js"
+	},
+	"./helpers": {
+		"import": "./lib/esm/helpers/index.js",
+		"require": "./lib/cjs/helpers/index.js"
+	},
+	"./objects": {
+		"import": "./lib/esm/objects/index.js",
+		"require": "./lib/cjs/objects/index.js"
+	},
+	"./services": {
+		"import": "./lib/esm/services/index.js",
+		"require": "./lib/cjs/services/index.js"
+	}
   }
 }

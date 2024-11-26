@@ -1,5 +1,14 @@
 // Components exports
-export * from './accordion'
+export {
+  Accordion,
+  AccordionItem,
+  AccordionHeader,
+  AccordionBody,
+  type AccordionProps,
+  type AccordionItemProps,
+  type AccordionBodyProps,
+  type AccordionHeaderProps,
+} from './accordion'
 export * from './alert'
 export * from './autocomplete'
 export * from './autolayout'
@@ -29,7 +38,7 @@ export * from './price'
 export * from './product-tour'
 export * from './progress'
 export * from './radio'
-export * from './range'
+export { Range, type RangeProps } from './range'
 export * from './rows'
 export * from './scroll-view'
 export * from './section'

@@ -1,4 +1,7 @@
 import Breadcrumb from './Breadcrumb'
-import BreadcrumbItem from './item'
+import BreadcrumbItem, { type BreadcrumbItemProps, type BreadcrumbItemPropsWeb } from './item'
+
+export type * from './BreadcrumbProps'
 
 export { Breadcrumb, BreadcrumbItem }
+export type { BreadcrumbItemProps, BreadcrumbItemPropsWeb }

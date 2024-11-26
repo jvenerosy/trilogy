@@ -1,4 +1,6 @@
-import Countdown from "./Countdown"
-import { CountdownFormat, CountdownUnite } from "./CountdownEnum"
+import Countdown from './Countdown'
+import { CountdownFormat, CountdownUnite, getFormatWidth } from './CountdownEnum'
 
-export { Countdown, CountdownFormat, CountdownUnite }
+export type * from './CountdownProps'
+
+export { Countdown, CountdownFormat, CountdownUnite, getFormatWidth }

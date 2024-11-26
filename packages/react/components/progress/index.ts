@@ -1,5 +1,9 @@
 import Progress from './Progress'
-import ProgressItem from './item'
-import ProgressRadial from './radial'
-import ProgressRadialItem from './radial/item/ProgressRadialtem'
+import ProgressItem, { type ProgressItemProps } from './item'
+import ProgressRadial, { type ProgressRadialProps } from './radial'
+import ProgressRadialItem, { type ProgressRadialItemProps } from './radial/item'
+
+export type * from './ProgressProps'
+
 export { Progress, ProgressItem, ProgressRadial, ProgressRadialItem }
+export type { ProgressItemProps, ProgressRadialProps, ProgressRadialItemProps }

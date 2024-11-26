@@ -1,6 +1,6 @@
 import List from './List'
 
 export * from './item'
-export * from './ListProps'
+export type * from './ListProps'
 
 export { List }

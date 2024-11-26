@@ -1,4 +1,4 @@
 import ProductTour from './ProductTour'
 
-export * from './ProductTourProps'
+export type * from './ProductTourProps'
 export { ProductTour }

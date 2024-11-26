@@ -1,7 +1,8 @@
 import AutoComplete from './AutoComplete'
-import AutoCompleteItem from './item'
-import AutoCompleteMenu from './menu'
+import AutoCompleteItem, { type AutoCompleteItemProps } from './item'
+import AutoCompleteMenu, { type AutoCompleteMenuProps } from './menu'
 
-export * from './AutoCompleteProps'
+export type * from './AutoCompleteProps'
 
 export { AutoComplete, AutoCompleteItem, AutoCompleteMenu }
+export type { AutoCompleteItemProps, AutoCompleteMenuProps }

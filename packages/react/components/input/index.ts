@@ -1,6 +1,6 @@
 import Input from './Input'
 
 export * from './InputEnum'
-export * from './InputProps'
+export type * from './InputProps'
 
 export { Input }
