@@ -1,5 +1,5 @@
 import CardContent from './CardContent'
 
-export type * from './CardContentProps'
+export type { CardContentProps } from './CardContentProps'
 
 export default CardContent

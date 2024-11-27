@@ -1,5 +1,5 @@
 import SelectOption from './SelectOption'
 
-export type * from './SelectOptionProps'
+export type { SelectOptionProps } from './SelectOptionProps'
 
 export default SelectOption

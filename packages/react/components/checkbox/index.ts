@@ -1,5 +1,5 @@
 import Checkbox from './Checkbox'
 
-export type * from './CheckboxProps'
+export type { CheckboxChangeEvent, CheckboxClickEvent, CheckboxProps } from './CheckboxProps'
 
 export { Checkbox }

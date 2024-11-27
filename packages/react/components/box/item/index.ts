@@ -1,6 +1,6 @@
 import BoxItem from './BoxItem'
 
 export * from './BoxItemEnum'
-export type * from './BoxItemProps'
+export type { BoxItemProps } from './BoxItemProps'
 
 export default BoxItem

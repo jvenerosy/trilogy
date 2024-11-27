@@ -1,5 +1,5 @@
 import TableTh from './TableTh'
 
-export type * from './TableThProps'
+export type { TableThProps } from './TableThProps'
 
 export default TableTh

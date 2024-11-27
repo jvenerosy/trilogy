@@ -1,5 +1,5 @@
 import Container from './Container'
 
-export type * from './ContainerProps'
+export type { ContainerProps } from './ContainerProps'
 
 export { Container }

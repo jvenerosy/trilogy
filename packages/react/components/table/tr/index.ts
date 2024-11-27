@@ -1,5 +1,5 @@
 import TableTr from './TableTr'
 
-export type * from './TableTrProps'
+export type { TableTrPropsNative, TableTrProps } from './TableTrProps'
 
 export default TableTr

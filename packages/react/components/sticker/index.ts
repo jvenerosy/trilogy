@@ -1,6 +1,6 @@
 import Sticker from './Sticker'
 
 export * from './StickerEnum'
-export type * from './StickerProps'
+export type { StickerProps } from './StickerProps'
 
 export { Sticker }

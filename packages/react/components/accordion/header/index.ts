@@ -1,5 +1,5 @@
 import AccordionHeader from './AccordionHeader'
 
-export type * from './AccordionHeaderProps'
+export type { AccordionHeaderProps } from './AccordionHeaderProps'
 
 export default AccordionHeader

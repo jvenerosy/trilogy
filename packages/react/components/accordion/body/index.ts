@@ -1,5 +1,5 @@
 import AccordionBody from './AccordionBody'
 
-export type * from './AccordionBodyProps'
+export type { AccordionBodyProps } from './AccordionBodyProps'
 
 export default AccordionBody

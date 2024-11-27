@@ -1,8 +1,7 @@
 import { Clickable } from '@/objects'
 import { Flexable } from '@/objects/facets/Flexable'
-import { DimensionValue } from "react-native"
-
-type Styles = { [key: string]: unknown }
+import { Styles } from '@/types'
+import { DimensionValue } from 'react-native'
 
 export interface ImageProps extends Clickable, Flexable {
   className?: string

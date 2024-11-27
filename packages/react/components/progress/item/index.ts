@@ -1,5 +1,5 @@
 import ProgressItem from './ProgressItem'
 
-export type * from './ProgressItemProps'
+export type { ProgressItemProps } from './ProgressItemProps'
 
 export default ProgressItem

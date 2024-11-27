@@ -5,7 +5,7 @@ import TableTh, { type TableThProps } from './th'
 import TableTr, { type TableTrProps } from './tr'
 import TableTd, { type TableTdProps } from './td'
 
-export type * from './TableProps'
+export type { TableProps } from './TableProps'
 
 export { Table, TableHead, TableBody, TableTr, TableTh, TableTd }
 export type { TableHeadProps, TableBodyProps, TableTrProps, TableThProps, TableTdProps }

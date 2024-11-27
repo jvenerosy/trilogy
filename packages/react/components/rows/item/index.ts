@@ -1,5 +1,5 @@
 import RowItem from './RowItem'
 
-export type * from './RowItemProps'
+export type { RowsItemProps } from './RowItemProps'
 
 export default RowItem

@@ -1,5 +1,5 @@
 import ModalFooter from './ModalFooter'
 
-export type * from './ModalFooterProps'
+export type { ModalFooterProps } from './ModalFooterProps'
 
 export default { ModalFooter }

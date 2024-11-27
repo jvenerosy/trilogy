@@ -1,5 +1,5 @@
 import ModalTitle from './ModalTitle'
 
-export type * from './ModalTitleProps'
+export type { ModalTitleProps } from './ModalTitleProps'
 
 export default { ModalTitle }

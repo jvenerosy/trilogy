@@ -1,5 +1,5 @@
 import AccordionItem from './AccordionItem'
 
-export type * from './AccordionItemProps'
+export type { TargetElement, OnClickEvent, OnClickCallback, AccordionItemProps } from './AccordionItemProps'
 
 export default AccordionItem

@@ -1,5 +1,5 @@
 import BoxTableContainer from './BoxTableContainer'
 
-export type * from './BoxTableContainerProps'
+export type { BoxTableContainerProps } from './BoxTableContainerProps'
 
 export default BoxTableContainer

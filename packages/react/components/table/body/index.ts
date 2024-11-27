@@ -1,5 +1,5 @@
 import TableBody from './TableBody'
 
-export type * from './TableBodyProps'
+export type { TableBodyProps } from './TableBodyProps'
 
 export default TableBody

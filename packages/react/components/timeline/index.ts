@@ -3,7 +3,7 @@ import TimelineItem, { type TimelineItemProps, type TimelineItemWebProps } from 
 import TimelineMarker, { type TimelineMarkerProps, type TimelineMarkerWebProps } from './marker'
 import Timeline from './Timeline'
 
-export type * from './TimelineProps'
+export type { TimelineProps } from './TimelineProps'
 
 export { Timeline, TimelineItem, TimelineContent, TimelineMarker }
 export type {

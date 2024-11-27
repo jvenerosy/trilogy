@@ -1,7 +1,7 @@
 import Columns from './Columns'
 import ColumnsItem, { type ColumnsItemProps } from './item'
 
-export type * from './ColumnsProps'
+export type { ColumnsProps } from './ColumnsProps'
 export * from './ColumnsTypes'
 
 export { Columns, ColumnsItem }

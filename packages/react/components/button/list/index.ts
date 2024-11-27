@@ -1,5 +1,5 @@
 import ButtonList from './ButtonList'
 
-export type * from './ButtonListProps'
+export type { ButtonListProps, ButtonListWebProps } from './ButtonListProps'
 
 export { ButtonList }

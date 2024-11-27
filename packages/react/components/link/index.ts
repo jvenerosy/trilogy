@@ -1,5 +1,5 @@
 import Link from './Link'
 
-export type * from './LinkProps'
+export type { LinkProps } from './LinkProps'
 
 export { Link }

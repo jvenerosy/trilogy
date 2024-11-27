@@ -1,6 +1,6 @@
 import Text from './Text'
 
 export * from './TextEnum'
-export type * from './TextProps'
+export type { TextProps } from './TextProps'
 
 export { Text }

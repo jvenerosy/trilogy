@@ -1,5 +1,5 @@
 import AutoCompleteItem from './AutoCompleteItem'
 
-export type * from './AutoCompleteItemProps'
+export type { AutoCompleteItemProps } from './AutoCompleteItemProps'
 
 export default AutoCompleteItem

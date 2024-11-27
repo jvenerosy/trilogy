@@ -1,5 +1,5 @@
 import BoxContent from './BoxContent'
 
-export type * from './BoxContentProps'
+export type { BoxContentProps } from './BoxContentProps'
 
 export default BoxContent

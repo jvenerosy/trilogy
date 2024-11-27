@@ -1,3 +1,4 @@
+import { Styles } from '@/types'
 import {
   IconSize,
   IconStatus,
@@ -14,8 +15,6 @@ import {
 } from './IconEnum'
 import { IconName, IconNameValues } from './IconNameEnum'
 import { Accessibility, Clickable, TrilogyColor, TrilogyColorValues, Stacked, AlignableProps, Dev } from '@/objects'
-
-type Styles = { [key: string]: unknown }
 
 /**
  * Icon Interface

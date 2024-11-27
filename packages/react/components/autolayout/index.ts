@@ -5,4 +5,4 @@ export { AutoLayout, AutoLayoutWrapper }
 
 export * from './DefaultSpacingMatrix'
 export * from './SpacingMatrix'
-export type * from './AutoLayoutProps'
+export type { EdgeType, AutoLayoutProps } from './AutoLayoutProps'

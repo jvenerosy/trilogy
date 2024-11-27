@@ -1,6 +1,6 @@
 import CardImage from './CardImage'
 
-export type * from './CardImageProps'
+export type { CardImageProps } from './CardImageProps'
 export * from './CardImageEnum'
 
 export default CardImage

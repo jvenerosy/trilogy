@@ -1,5 +1,5 @@
 import Range from './Range'
 
-export type * from './RangeProps'
+export type { InputChangeEventHandlerNative, InputChangeEventHandlerWeb, RangeProps } from './RangeProps'
 
 export { Range }

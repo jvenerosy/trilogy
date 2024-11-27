@@ -1,5 +1,5 @@
 import TableTd from './TableTd'
 
-export type * from './TableTdProps'
+export type { TableTdProps } from './TableTdProps'
 
 export default TableTd

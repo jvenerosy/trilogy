@@ -1,6 +1,6 @@
 import Price from './Price'
 
 export * from './PriceEnum'
-export type * from './PriceProps'
+export type { PriceProps } from './PriceProps'
 
 export { Price }

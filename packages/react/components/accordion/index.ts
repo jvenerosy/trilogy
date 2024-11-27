@@ -8,7 +8,7 @@ import AccordionItem, {
 import AccordionHeader, { type AccordionHeaderProps } from './header'
 import AccordionBody, { type AccordionBodyProps } from './body'
 
-export type * from './AccordionProps'
+export type { AccordionProps } from './AccordionProps'
 
 export { Accordion, AccordionItem, AccordionHeader, AccordionBody }
 export type {

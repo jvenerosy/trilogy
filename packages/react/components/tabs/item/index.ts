@@ -1,5 +1,5 @@
 import TabItem from './TabsItem'
 
-export type * from './TabsItemProps'
+export type { TabsItemProps } from './TabsItemProps'
 
 export default TabItem

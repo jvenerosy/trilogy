@@ -1,5 +1,5 @@
 import BoxFooter from './BoxFooter'
 
-export type * from './BoxFooterProps'
+export type { BoxFooterProps } from './BoxFooterProps'
 
 export default BoxFooter

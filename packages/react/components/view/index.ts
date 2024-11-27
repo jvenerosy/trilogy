@@ -1,6 +1,6 @@
 import View from './View'
 
 export * from './ViewEnum'
-export type * from './ViewProps'
+export { ViewMarkup, type ViewMarkupValues, type ViewProps } from './ViewProps'
 
 export { View }

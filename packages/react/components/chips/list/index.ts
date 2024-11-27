@@ -1,5 +1,5 @@
 import ChipsList from './ChipsList'
 
-export type * from './ChipsListProps'
+export type { ChipsListProps } from './ChipsListProps'
 
 export default ChipsList

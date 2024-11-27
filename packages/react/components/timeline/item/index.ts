@@ -1,5 +1,5 @@
 import TimelineItem from './TimelineItem'
 
-export type * from './TimelineItemProps'
+export type { TimelineItemProps, TimelineItemWebProps } from './TimelineItemProps'
 
 export default TimelineItem

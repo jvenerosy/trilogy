@@ -1,6 +1,6 @@
 import Spacer from './Spacer'
 
 export * from './SpacerEnum'
-export type * from './SpacerProps'
+export type { SpacerProps } from './SpacerProps'
 
 export { Spacer }

@@ -1,5 +1,5 @@
 import ProgressRadial from './ProgressRadial'
 
-export type * from './ProgressRadialProps'
+export type { ProgressRadialProps } from './ProgressRadialProps'
 
 export default ProgressRadial

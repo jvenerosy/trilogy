@@ -1,5 +1,5 @@
 import BoxHeader from './BoxHeader'
 
-export type * from './BoxHeaderProps'
+export type { BoxHeaderProps } from './BoxHeaderProps'
 
 export default BoxHeader

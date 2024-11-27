@@ -1,5 +1,5 @@
 import Switch from './Switch'
 
-export type * from './SwitchProps'
+export type { SwitchChangeEvent, SwitchProps } from './SwitchProps'
 
 export { Switch }

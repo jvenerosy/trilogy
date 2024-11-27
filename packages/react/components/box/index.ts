@@ -5,7 +5,7 @@ import BoxHeader, { type BoxHeaderProps } from './header'
 import BoxTableContainer, { type BoxTableContainerProps } from './table-container'
 import BoxItem, { BoxItemSize, type BoxItemProps, type BoxItemSizeValues } from './item'
 
-export type * from './BoxProps'
+export { BoxMarkup, type BoxMarkupValues, type BoxProps } from './BoxProps'
 
 export { Box, BoxItem, BoxItemSize, BoxHeader, BoxContent, BoxFooter, BoxTableContainer }
 export type { BoxItemProps, BoxItemSizeValues, BoxContentProps, BoxFooterProps, BoxHeaderProps, BoxTableContainerProps }

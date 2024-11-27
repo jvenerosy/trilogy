@@ -1,5 +1,5 @@
 import Image from './Image'
 
-export type * from './ImageProps'
+export type { ImageProps } from './ImageProps'
 
 export { Image }

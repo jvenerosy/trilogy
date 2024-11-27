@@ -1,5 +1,5 @@
 import Section from './Section'
 
-export type * from './SectionProps'
+export type { SectionProps } from './SectionProps'
 
 export { Section }

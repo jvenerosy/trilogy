@@ -1,5 +1,5 @@
 import ColumnsItem from './ColumnsItem'
 
-export type * from './ColumnsItemProps'
+export type { ColumnsItemProps } from './ColumnsItemProps'
 
 export default ColumnsItem

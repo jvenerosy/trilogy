@@ -1,5 +1,5 @@
 import TimelineMarker from './TimelineMarker'
 
-export type * from './TimelineMarkerProps'
+export type { TimelineMarkerProps, TimelineMarkerWebProps } from './TimelineMarkerProps'
 
 export default TimelineMarker

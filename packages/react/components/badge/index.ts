@@ -1,6 +1,6 @@
 import Badge from './Badge'
 
 export * from './BadgeEnum'
-export type * from './BadgeProps'
+export type { BadgeProps } from './BadgeProps'
 
 export { Badge }

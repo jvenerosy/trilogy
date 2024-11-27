@@ -1,5 +1,5 @@
 import Otp from './Otp'
 
-export type * from './OtpProps'
+export type { OtpProps } from './OtpProps'
 
 export { Otp }
