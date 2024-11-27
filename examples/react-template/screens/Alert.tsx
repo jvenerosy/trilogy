@@ -14,9 +14,8 @@ import {
 } from '@trilogy-ds/react/components'
 import { StatusState } from '@trilogy-ds/react/objects'
 import { useContext, useState } from 'react'
-import ToasterContext from '@trilogy-ds/react/lib/esm/components/alert/context/ToasterContext'
-import { ToasterAlertProvider } from '@trilogy-ds/react/lib/esm/components/alert'
-import { ToasterAlertPosition } from '@trilogy-ds/react/lib/esm/components/alert/AlertProps'
+import ToasterContext from '@trilogy-ds/react/components/alert/context'
+import { ToasterAlertProvider, ToasterAlertPosition } from '@trilogy-ds/react/components/alert'
 
 export const AlertScreen = (): JSX.Element => {
   const ToasterAlertView: React.FC = () => {

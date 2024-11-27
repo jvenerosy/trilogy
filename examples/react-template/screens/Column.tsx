@@ -18,7 +18,7 @@ import {
   Title,
   TitleLevels,
 } from '@trilogy-ds/react/components'
-import { GapSize } from '@trilogy-ds/react/lib/esm/components/columns/ColumnsTypes'
+import { GapSize } from '@trilogy-ds/react/components/columns'
 import { Alignable, TrilogyColor } from '@trilogy-ds/react'
 
 export const ColumnScreen = (): JSX.Element => {

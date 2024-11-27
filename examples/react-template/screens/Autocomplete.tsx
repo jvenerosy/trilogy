@@ -12,7 +12,7 @@ import {
 } from '@trilogy-ds/react/components'
 // import {Item} from '@trilogy-ds/react/components/autocomplete/AutoCompleteProps'
 import { AutoComplete, Item } from '@trilogy-ds/react/components/autocomplete'
-import { InputClickEvent } from '@trilogy-ds/react/components/input/InputProps'
+import { InputClickEvent } from '@trilogy-ds/react/components/input'
 import React, { useState } from 'react'
 
 const getSuggestions = async () => {
