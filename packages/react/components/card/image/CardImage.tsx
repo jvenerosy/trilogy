@@ -16,7 +16,7 @@ import { useTrilogyContext } from '@/context'
  * - -------------------------- WEB PROPERTIES ----------------------------------
  * @param className Additionnal CSS Classes
  */
-const CardImage = ({ src, alt, className, id, size, onClick, ...others }: CardImageProps): JSX.Element => {
+const CardImage = ({ src, alt="", className, id, size, onClick, ...others }: CardImageProps): JSX.Element => {
   const { styled } = useTrilogyContext()
   const classes = hashClass(styled, clsx('card-image', size && is(`${size}`), className))
 
